@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-univer-htmlcss-1.github.io/2448479-sedona-2/2/">
+</head>
+  <body>
+
+    <header class="page-header page-header--index">
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo" src="#" alt="Логотип Седона">
+      </a>
+      <nav class="page-header__nav">
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-item"><a class="page-header__menu-link" href="#">Информация</a></li>
+          <li class="page-header__menu-item"><a class="page-header__menu-link" href="#">Фото и видео</a></li>
+          <li class="page-header__menu-item"><a class="page-header__menu-link" href="#">Карта штата</a></li>
+          <li class="page-header__menu-item"><a class="page-header__menu-link" href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="features">
+        <div class="features__title">
+          <h1 class="features__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+
+        <ul class="features__list">
+          <li class="features__item features__item--foto-right">
+            <div class="features__content">
+              <h3 class="features__subheader">Настоящий городок</h3>
+              <span class="features__number">№1</span>
+              <p class="features__description">Седона — не аттракцион для туристов, там&nbsp;течёт своя жизнь</p>
+            </div>
+            <div class="features__foto">
+              <img class="foto-right" src="#" alt="Фотография города Седона">
+            </div>
+          </li>
+
+          <li class="features__item">
+            <div class="features__content promo promo--house">
+              <h4 class="promo__header">Жильё</h4>
+              <p class="promo__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+          </li>
+
+          <li class="features__item">
+            <div class="features__content promo promo--food">
+              <h4 class="promo__header">Еда</h4>
+              <p class="promo__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+          </li>
+
+          <li class="features__item">
+            <div class="features__content promo promo--gift">
+              <h4 class="promo__header">Сувениры</h4>
+              <p class="promo__text">Не только китайского, но и местного производства!</p>
+            </div>
+          </li>
+
+          <li class="features__item  features__item--foto-left">
+            <div class="features__content">
+              <h3 class="features__subheader">Там есть<br>мост дьявола</h3>
+              <span class="features__number">№2</span>
+              <p class="features__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div class="features__foto">
+              <img class="foto-left" src="#" alt="Фотография моста дьявола">
+            </div>
+          </li>
+
+          <li class="features__item more">
+            <h3 class="more__subheader">Небольшая площадь</h3>
+            <span class="more__number">№3</span>
+            <p class="more__description">Все достопримечательности находяться очень близко</p>
+          </li>
+
+          <li class="features__item more">
+            <h3 class="more__subheader">Красивая дорога</h3>
+            <span class="more__number">№4</span>
+            <p class="more__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+
+          <li class="features__item more">
+            <h3 class="more__subheader">Мало туристов</h3>
+            <span class="more__number">№5</span>
+            <p class="more__description">Большинство едет в Гранд Каньон и&nbsp;толпиться там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="search-hotel">
+        <h2 class="search-hotel__header">Заинтересовались?</h2>
+        <p class="search-hotel__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+
+        <div class="map-wrapper">
+          <button class="form-search-show btn" type="button">Поиск гостиницы в Седоне</button>
+          <form class="form-search form-search--show" action="https://echo.htmlacademy.ru/" method="GET">
+            <div class="form-search__row">
+              <label class="form-search__label" for="date-arrival">Дата заезда:</label>
+              <input class="form-search__text" id="date-arrival" name="date-arrival" type="text" placeholder="24 апреля 2017">
+              <button class="form-search__calendar" type="button">
+                <span class="visually-hidden">календарь</span>
+              </button>
+            </div>
+
+            <div class="form-search__row">
+              <label class="form-search__label" for="date-leave">Дата выезда:</label>
+              <input class="form-search__text" id="date-leave" name="date-leave" type="text" placeholder="4 июля 2017">
+              <button class="form-search__calendar" type="button">
+                <span class="visually-hidden">календарь</span>
+              </button>
+            </div>
+
+            <div class="form-search__row">
+              <div class="form-search__age">
+                <label class="form-search__label form-search__label--adult" for="adult-ticket">Взрослые:</label>
+                <button class="btn btn--control btn--minus" type="button">
+                  <span class="visually-hidden">уменьшить количество взрослых</span>
+                </button>
+                <input class="form-search__number" id="adult-ticket" name="adult-ticket" type="text" title="Введите количество взрослых от 0 до 9" pattern="[0-9]{0,1}" placeholder="2">
+                <button class="btn btn--control btn--plus" type="button">
+                  <span class="visually-hidden">увеличить количество взрослых</span>
+                </button>
+              </div>
+              <div class="form-search__age">
+                <label class="form-search__label form-search__label--children" for="children-ticket">Дети:</label>
+                <button class="btn btn--control btn--minus" type="button">
+                  <span class="visually-hidden">уменьшить количество детей</span>
+                </button>
+                <input class="form-search__number" id="children-ticket" name="children-ticket" type="text" title="Введите количество детей от 0 до 9" pattern="[0-9]{0,1}" placeholder="0">
+                <button class="btn btn--control btn--plus" type="button">
+                  <span class="visually-hidden">увеличить количество детей</span>
+                </button>
+              </div>
+            </div>
+
+            <button class="form-search__submit btn" type="submit">Найти</button>
+          </form>
+
+          <div class="search-hotel__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d840735.277484057!2d-111.67046583593752!3d34.601071898338255!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1570218778407!5m2!1sru!2sru" width="1200" height="593" style="border:0;" allowfullscreen="" tabindex="-1"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__social-hashtag">#visitSEDONA</p>
+
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--tw" href="#">
+            <span class="visually-hidden">Седона в твитере</span>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--fb" href="#">
+            <span class="visually-hidden">Седона на фейсбуке</span>
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
+            <span class="visually-hidden">Седона на ютубе</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="page-footer__copyright">
+        Website by
+        <a class="page-footer__copylink" href="https://htmlacademy.ru/intensive/htmlcss">
+          HTML Academy
+        </a>
+      </p>
+    </footer>
+
+    <script src="js/search-hotel.min.js"></script>
+
+  </body>
+</html>
